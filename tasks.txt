@@ -1,4 +1,5 @@
 uvicorn valorant_api.main:app
+pipenv install -r requirements.txt
 
 finish news x
 add keyword news x  --> multiple keywords comma separated doenst work?
