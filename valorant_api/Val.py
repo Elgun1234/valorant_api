@@ -41,5 +41,3 @@ class valorant:
         else:
             return new_data
 
-d = valorant()
-print(d.get_news("100,Riot"))

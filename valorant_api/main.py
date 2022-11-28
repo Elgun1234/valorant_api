@@ -36,7 +36,6 @@ async def root(request : Request):
 @app.get("/news", response_class=HTMLResponse)
 async def news(request: Request, keywords: str = ""):
     news_data = valorant.get_news(keywords = keywords )
-    log.info(keywords)
     if news_data == []:
         return templates.TemplateResponse(
         "nothing.html",{"request": request }
