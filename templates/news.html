@@ -9,7 +9,7 @@
 {% for news in news_data%}
   <div class="card" style="width: 50rem;">
     <div class="card-body">
-      <a href="https://www.vlr.gg{{news_data[loop.index0]['url_path']}}"class="stretched-link"><h5 class="card-title">{{news_data[loop.index0]["title"]}}</h5></a>
+      <a href="https://www.vlr.gg{{news_data[loop.index0]['url_path']}}"class="link-secondary"><h5 class="card-title">{{news_data[loop.index0]["title"]}}</h5></a>
       <h6 class="card-subtitle mb-2 text-muted">{{news_data[loop.index0]["date"]}}    </h6>
       <h6 class="card-subtitle mb-2 text-muted">{{news_data[loop.index0]["author"]}}  </h6>
 
