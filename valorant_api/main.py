@@ -47,5 +47,10 @@ async def news(request: Request, keywords: str = ""):
 
         )
 
-
+@app.get("/rankings", response_class=HTMLResponse)
+async def ranks(request: Request):
+    data = valorant.get_rankings()
+    return templates.TemplateResponse(
+        "rankings.html", {"request": request, "ranking_data": data}
+    )
 
