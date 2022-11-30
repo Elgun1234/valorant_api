@@ -41,3 +41,19 @@ class valorant:
         else:
             return new_data
 
+    def get_rankings(self):
+        regions = ["na","eu","ap","oce","kr","mn","gc","br","cn"]
+        top_3 = []
+
+        for i in regions:
+            url = self.base + "rankings/" + i
+
+            data = scrape(url)
+            for k in range(3):
+                top_3.append(data["data"][k])
+        return top_3
+
+
+
+
+
