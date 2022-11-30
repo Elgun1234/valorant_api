@@ -3,11 +3,18 @@ pipenv install -r requirements.txt
 https://vlrggapi.vercel.app/
 
 finish news x
-add keyword news x  --> multiple keywords comma separated doenst work?
+add keyword news x
 do templating and such x
 
-/ranking global ranking
 /ranking/(area) ranking of area
+card
+try remove borders and curved edges
+find way to loop through and add region
+list of regions?
+
+
+stats
+player of month 
 
 upcoming matches
 upcoming matches in an area
