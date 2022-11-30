@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block page_content %}
+{% for i in ranking_data %}
+{% if loop.index0 % 3 == 0%}
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+  </div>
+</div>
+
+
+{%- endfor %}
+
+
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
