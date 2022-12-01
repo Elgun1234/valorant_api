@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+<style>
+.div-1 {
+  style="white-space:nowrap;"
+}
+</style>
 
 {% block title %}{% endblock %}
 
@@ -7,16 +12,26 @@
 
 {% block page_content %}
 {% for i in ranking_data %}
-{% if loop.index0 % 3 == 0%}
+
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title"></h5>
+    <h5 class="card-title">{{i}}:</h5>
+
+    <div> class="div-1"
+      <img src={{ranking_data[i][0]["logo"]}}   style="width:50px;height:50px;">
+      <strong>{{ranking_data[i][0]["rank"]}} </strong>
+      <strong>{{ranking_data[i][0]["team"]}} </strong>
+
+
   </div>
-</div>
+
+  </div>
+
+
+
 
 
 {%- endfor %}
-
 
 {% endblock %}
 
