@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 <style>
 .div-1 {
-  style="white-space:nowrap;"
+  style: "white-space:nowrap;"
 }
 </style>
 
@@ -15,18 +15,37 @@
 
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title">{{i}}:</h5>
+     <h5 class="card-title">{{i}}:</h5>
 
-    <div> class="div-1"
-      <img src={{ranking_data[i][0]["logo"]}}   style="width:50px;height:50px;">
-      <strong>{{ranking_data[i][0]["rank"]}} </strong>
-      <strong>{{ranking_data[i][0]["team"]}} </strong>
+    <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Last Played</th>
+      <th scope="col">Record</th>
+      <th scope="col">Earnings</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for k in range(0,3) %}
+<a href="https://www.w3schools.com">
+    <tr>
+      <th scope="row">{{ranking_data[i][k]["rank"]}}</th>
 
+      <td> <img src={{ranking_data[i][k]["logo"]}}   width="50" height="50" > <strong>{{ranking_data[i][k]["team"]}}</strong></td>
+      <td>{{ranking_data[i][k]["last_played"]}}</td>
+      <td>{{ranking_data[i][k]["last_played"]}}</td>
+      <td>{{ranking_data[i][k]["earnings"]}}</td>
+
+    </tr>
+  </a>
+{% endfor %}
+  </tbody>
+</table>
 
   </div>
-
-  </div>
-
+</div>
 
 
 
