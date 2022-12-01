@@ -6,20 +6,19 @@ finish news x
 add keyword news x
 do templating and such x
 
-/ranking/(area) ranking of area
-card
-try remove borders and curved edges
-find way to loop through and add region
-list of regions?
 
+cardx
+try remove borders and curved edges
+find way to loop through and add region --- dictionary the regions and put data in through val.pyx
+list of regions?x
+
+/ranking/(area) ranking of area
+do links on global ranking
+do ranks on individual teams
+link to vlr lowercase -
 
 stats
-player of month 
+player of month
 
 upcoming matches
 upcoming matches in an area
-
-results of match in past day sdasdasdas
-results of matches of team?
-
-**everytime user get new friend or unadds friend send notifcation**
