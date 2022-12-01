@@ -43,15 +43,19 @@ class valorant:
 
     def get_rankings(self):
         regions = ["na","eu","ap","oce","kr","mn","gc","br","cn"]
-        top_3 = []
+
+        top_3_dict = {}
 
         for i in regions:
+            top_3 = []
             url = self.base + "rankings/" + i
 
             data = scrape(url)
             for k in range(3):
                 top_3.append(data["data"][k])
-        return top_3
+            if i not in top_3_dict:
+                top_3_dict[i.upper()] = top_3
+        return top_3_dict
 
 
 
