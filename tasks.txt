@@ -13,12 +13,54 @@ find way to loop through and add region --- dictionary the regions and put data 
 list of regions?x
 
 /ranking/(area) ranking of area
-do links on global ranking
-do ranks on individual teams
-link to vlr lowercase -
+some regions dont work?
+
+do ranks on individual teamsx
+link to vlr lowercase - each page has an id no pattern?
 
 stats
 player of month
 
 upcoming matches
 upcoming matches in an area
+
+results of match in past day sdasdasdas
+results of matches of team?
+
+**everytime user get new friend or unadds friend send notifcation**
+
+
+
+<div class="card">
+  <div class="card-body">
+     <h5 class="card-title">{{i}}:</h5>
+
+    <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Last Played</th>
+      <th scope="col">Record</th>
+      <th scope="col">Earnings</th>
+    </tr>
+  </thead>
+  <tbody>
+
+<a href="https://www.w3schools.com">
+    <tr>
+      <th scope="row">{{ranking_data[i][k]["rank"]}}</th>
+
+      <td> <img src={{ranking_data[i][k]["logo"]}}   width="50" height="50" > <strong>{{ranking_data[i][k]["team"]}}</strong></td>
+      <td>{{ranking_data[i][k]["last_played"]}}</td>
+      <td>{{ranking_data[i][k]["record"]}}</td>
+      <td>{{ranking_data[i][k]["earnings"]}}</td>
+
+    </tr>
+  </a>
+
+  </tbody>
+</table>
+
+  </div>
+</div>
