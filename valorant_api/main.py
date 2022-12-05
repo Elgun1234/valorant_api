@@ -54,3 +54,10 @@ async def ranks(request: Request):
         "rankings.html", {"request": request, "ranking_data": data}
     )
 
+@app.get("/rankings/{region}", response_class=HTMLResponse)
+async def regions(request: Request, region : str):
+    data = valorant.get_region_rank(region)
+    return templates.TemplateResponse(
+        "region.html", {"request": request, "data": data}
+    )
+
