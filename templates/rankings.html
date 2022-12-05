@@ -15,7 +15,7 @@
 
 <div class="card">
   <div class="card-body">
-     <h5 class="card-title">{{i}}:</h5>
+     <a href="http://127.0.0.1:8000/rankings/{{i}}" class="link-dark"> <h5 class="card-title">{{i}}:</h5> </a>
 
     <table class="table table-hover">
   <thead>
@@ -29,8 +29,9 @@
   </thead>
   <tbody>
 {% for k in range(0,3) %}
-<a href="https://www.w3schools.com">
+
     <tr>
+
       <th scope="row">{{ranking_data[i][k]["rank"]}}</th>
 
       <td> <img src={{ranking_data[i][k]["logo"]}}   width="50" height="50" > <strong>{{ranking_data[i][k]["team"]}}</strong></td>
@@ -39,7 +40,7 @@
       <td>{{ranking_data[i][k]["earnings"]}}</td>
 
     </tr>
-  </a>
+
 {% endfor %}
   </tbody>
 </table>
