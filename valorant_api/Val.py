@@ -55,7 +55,25 @@ class valorant:
                 top_3.append(data["data"][k])
             if i not in top_3_dict:
                 top_3_dict[i.upper()] = top_3
+
+        for i in top_3_dict:
+            for k in range(3):
+                top_3_dict[i][k]["vlr link"] = top_3_dict[i][k]["team"].lower().replace(" ","-")
+
+
+
+
         return top_3_dict
+
+    def get_region_rank(self,region):
+        url = self.base + "rankings/" + region.lower()
+        print(region.lower())
+        print(url)
+        data = scrape(url)
+        return data
+
+
+
 
 
 
