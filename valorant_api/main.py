@@ -10,13 +10,17 @@ from fastapi.templating import Jinja2Templates
 from valorant_api.Val import valorant
 
 
+logs_file = Path(Path().resolve(), "log.txt")
+logs_file.touch(exist_ok=True)
 
 logging.basicConfig(
-    filename="log.txt", level=logging.INFO
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    level=os.environ.get("LOGLEVEL", "INFO"),
+    handlers=[logging.FileHandler(logs_file), logging.StreamHandler()],
 )
 
 log = logging.getLogger(__name__)
-
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
