@@ -15,6 +15,10 @@ list of regions?x
 /ranking/(area) ranking of area
 some regions dont work?
 
+USERNAMES AND PASSWORDS
+validate 
+add to text file
+
 do ranks on individual teamsx
 link to vlr lowercase - each page has an id no pattern?
 
