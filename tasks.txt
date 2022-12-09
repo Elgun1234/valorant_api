@@ -12,9 +12,11 @@ try remove borders and curved edges
 find way to loop through and add region --- dictionary the regions and put data in through val.pyx
 list of regions?x
 
+FINISH->
 /ranking/(area) ranking of area
-some regions dont work?
+some regions dont work
 
+FINISH->
 USERNAMES AND PASSWORDS
 validate 
 add to text file
