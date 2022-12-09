@@ -73,3 +73,9 @@ async def regions(request: Request):
         "login.html", {"request": request, }
     )
 
+@app.get("/sign_up", response_class=HTMLResponse)
+async def regions(request: Request):
+
+    return templates.TemplateResponse(
+        "sign_up.html", {"request": request, }
+    )
