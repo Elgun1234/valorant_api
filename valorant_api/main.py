@@ -9,7 +9,6 @@ from fastapi.templating import Jinja2Templates
 
 from valorant_api.Val import valorant
 
-
 logs_file = Path(Path().resolve(), "log.txt")
 logs_file.touch(exist_ok=True)
 
@@ -29,27 +28,29 @@ templates = Jinja2Templates(directory="templates")
 
 valorant = valorant()
 
-@app.get("/",response_class=HTMLResponse)
-async def root(request : Request):
 
+@app.get("/", response_class=HTMLResponse)
+async def root(request: Request):
     return templates.TemplateResponse(
         "base.html", {"request": request}
 
     )
 
+
 @app.get("/news", response_class=HTMLResponse)
 async def news(request: Request, keywords: str = ""):
-    news_data = valorant.get_news(keywords = keywords )
+    news_data = valorant.get_news(keywords=keywords)
     if news_data == []:
         return templates.TemplateResponse(
-        "nothing.html",{"request": request }
-
-    )
-    else:
-        return templates.TemplateResponse(
-            "news.html",{"request": request, "news_data" : news_data,   }
+            "nothing.html", {"request": request}
 
         )
+    else:
+        return templates.TemplateResponse(
+            "news.html", {"request": request, "news_data": news_data, }
+
+        )
+
 
 @app.get("/rankings", response_class=HTMLResponse)
 async def ranks(request: Request):
@@ -58,8 +59,9 @@ async def ranks(request: Request):
         "rankings.html", {"request": request, "ranking_data": data}
     )
 
+
 @app.get("/rankings/{region}", response_class=HTMLResponse)
-async def regions(request: Request, region : str):
+async def regions(request: Request, region: str):
     data = valorant.get_region_rank(region)
     return templates.TemplateResponse(
         "region.html", {"request": request, "data": data}
@@ -67,15 +69,30 @@ async def regions(request: Request, region : str):
 
 
 @app.get("/login", response_class=HTMLResponse)
-async def regions(request: Request):
-
+async def login(request: Request):
     return templates.TemplateResponse(
         "login.html", {"request": request, }
     )
 
-@app.get("/sign_up", response_class=HTMLResponse)
-async def regions(request: Request):
 
+@app.post("/login_check", response_class=HTMLResponse)
+async def login_check(request: Request, username: str = Form(), pass1: str = Form()):
+    log.info(f"{username}, {pass1}")
+    return templates.TemplateResponse(
+        "login.html", {"request": request, }
+    )
+
+
+@app.get("/sign_up", response_class=HTMLResponse)
+async def signup(request: Request):
+    return templates.TemplateResponse(
+        "sign_up.html", {"request": request, }
+    )
+
+
+@app.post("/sign_up_check", response_class=HTMLResponse)
+async def signup_check(request: Request, username: str = Form(), pass1: str = Form(), pass2: str = Form()):
+    log.info(f"{username}, {pass1}, {pass2}")
     return templates.TemplateResponse(
         "sign_up.html", {"request": request, }
     )
