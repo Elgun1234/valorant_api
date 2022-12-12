@@ -6,10 +6,11 @@
 {% endblock %}
 
 {% block page_content %}
+<form action="{{url_for('sign_up_check')}}" method="POST">
 <div class="card " style="height: 25rem;width: 25rem;margin: auto;">
 
   <label style="margin-left: auto;margin-right: auto;" for="exampleFormControlInput1" class="form-label fs-4 fw-semibold text-decoration-underline">Username</label>
-  <input   type="email" class="form-control" id="exampleFormControlInput1" >
+  <input   name="username" type="string" class="form-control" id="exampleFormControlInput1" >
 
   <label style="margin-left: auto;margin-right: auto;" for="exampleFormControlInput1" class="form-label fs-4 fw-semibold text-decoration-underline">Password</label>
   <input   type="password" class="form-control" id="exampleFormControlInput2" >
@@ -17,10 +18,11 @@
   <label style="margin-left: auto;margin-right: auto;" for="exampleFormControlInput1" class="form-label fs-4 fw-semibold text-decoration-underline">Confirm Password</label>
   <input   type="password" class="form-control" id="exampleFormControlInput3" >
 
-  <button type="button" class="btn btn-outline-primary" style="margin-top: 10%">Sign Up</button>
+  <input type="button" class="btn btn-outline-primary" style="margin-top: 10%">Sign Up</input>
 
 
 </div>
+</form>
 
 
 {% endblock %}
