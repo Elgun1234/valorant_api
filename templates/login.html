@@ -6,21 +6,22 @@
 {% endblock %}
 
 {% block page_content %}
+<form action="{{url_for('login_check')}}" method="POST">
 <div class="card " style="height: 25rem;width: 25rem;margin: auto;">
 
   <label style="margin-left: auto;margin-right: auto;" for="exampleFormControlInput1" class="form-label fs-4 fw-semibold text-decoration-underline">Username</label>
-  <input   type="email" class="form-control" id="exampleFormControlInput1" >
+  <input name="username"  type="string" class="form-control" id="exampleFormControlInput1" >
 
-  <label style="margin-left: auto;margin-right: auto;" for="exampleFormControlInput1" class="form-label fs-4 fw-semibold text-decoration-underline">Password</label>
-  <input   type="password" class="form-control" id="exampleFormControlInput2" >
+  <label style="margin-left: auto;margin-right: auto;" for="example FormControlInput1" class="form-label fs-4 fw-semibold text-decoration-underline">Password</label>
+  <input name="pass1"  type="password" class="form-control" id="exampleFormControlInput2" >
 
-  <button type="button" class="btn btn-primary" style="margin-top: 8%">Sign In</button>
+  <input type="submit" class="btn btn-primary" style="margin-top: 8%" value="Sign in">
 
   <a href="http://127.0.0.1:8000/sign_up" style="margin-top: 8%;margin-left: 70%" >Sign Up</a>
 
 
 </div>
-
+</form>
 
 {% endblock %}
 
