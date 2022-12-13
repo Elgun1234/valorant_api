@@ -9,13 +9,14 @@
         <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/" style="padding-top: 20px">Home</a>
         <a class="nav-link" href="http://127.0.0.1:8000/news" style="padding-top: 20px">News</a>
         <a class="nav-link" href="http://127.0.0.1:8000/rankings" style="padding-top: 20px">Team Rankings</a>
-{% if login_status == false%}
+{% if login_status == False%}
         <a class="nav-link" href="http://127.0.0.1:8000/login" style="margin-left: 600px"><button type="button" class="btn btn-primary btn-lg">Login</button></a>
 
         <a class="nav-link" href="http://127.0.0.1:8000/sign_up"> <button type="button" class="btn btn-outline-primary btn-lg" >Sign Up</button></a>
 {% endif%}
- {% if login_status == true%}
-        <b style="margin-left: 600px"><p style="blue">{{username}}</p></b>
+
+ {% if login_status == True%}
+        {{username}}
 {% endif %}
       </div>
     </div>

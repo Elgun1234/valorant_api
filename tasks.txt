@@ -22,8 +22,10 @@ FINISH->
 USERNAMES AND PASSWORDSx
 validate x
 add to text filex
+
 login state
 top of base and nav
+how to overwrite
 
 do ranks on individual teamsx
 link to vlr lowercase - each page has an id no pattern? impossible
