@@ -93,6 +93,9 @@ async def signup(request: Request):
 @app.post("/sign_up_check", response_class=HTMLResponse)
 async def signup_check(request: Request, username: str = Form(), pass1: str = Form(), pass2: str = Form()):
     log.info(f"{username}, {pass1}, {pass2}")
+
+    outcome = valorant.create_account(username,pass1,pass2)
+    log.info(f"{outcome}")
     return templates.TemplateResponse(
-        "sign_up.html", {"request": request, }
+        "sign_up.html", {"request": request, "outcome": outcome}
     )
