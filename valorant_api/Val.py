@@ -1,5 +1,5 @@
 from urllib.parse import quote, urlencode
-from valorant_api.utils import scrape
+from valorant_api.utils import scrape,username_check,add_account
 import logging
 
 log = logging.getLogger(__name__)
@@ -72,13 +72,32 @@ class valorant:
         print(region.lower())
         print(url)
         data = scrape(url)
-        dictionary[r.upper()]=(data)
+        dictionary[r.upper()]=data
         return dictionary
 
+    def create_account(self,username,pass1,pass2):
 
 
 
+        if pass1 != pass2:
+            return "error 1"
 
+        elif len(username) <5:
+            return "error 2"
+
+        elif len(pass1) < 5:
+            return "error 3"
+
+        elif number_check(pass1) == False :
+
+            return "error 4"
+
+        elif username_check(username) == False:
+            return "error 5"
+
+        else:
+            add_account(username,pass1)
+            return "successful"
 
 
 
