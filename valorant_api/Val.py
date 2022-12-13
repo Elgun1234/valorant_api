@@ -1,5 +1,5 @@
 from urllib.parse import quote, urlencode
-from valorant_api.utils import scrape,username_check,add_account
+from valorant_api.utils import scrape,username_check,add_account,number_check
 import logging
 
 log = logging.getLogger(__name__)
