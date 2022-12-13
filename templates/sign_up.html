@@ -6,19 +6,44 @@
 {% endblock %}
 
 {% block page_content %}
-<form action="{{url_for('sign_up_check')}}" method="POST">
+<form action="{{url_for('signup_check')}}" method="POST">
 <div class="card " style="height: 25rem;width: 25rem;margin: auto;">
 
   <label style="margin-left: auto;margin-right: auto;" for="exampleFormControlInput1" class="form-label fs-4 fw-semibold text-decoration-underline">Username</label>
   <input   name="username" type="string" class="form-control" id="exampleFormControlInput1" >
 
   <label style="margin-left: auto;margin-right: auto;" for="exampleFormControlInput1" class="form-label fs-4 fw-semibold text-decoration-underline">Password</label>
-  <input   type="password" class="form-control" id="exampleFormControlInput2" >
+  <input  name="pass1" type="password" class="form-control" id="exampleFormControlInput2" >
 
   <label style="margin-left: auto;margin-right: auto;" for="exampleFormControlInput1" class="form-label fs-4 fw-semibold text-decoration-underline">Confirm Password</label>
-  <input   type="password" class="form-control" id="exampleFormControlInput3" >
+  <input  name="pass2" type="password" class="form-control" id="exampleFormControlInput3" >
 
-  <input type="button" class="btn btn-outline-primary" style="margin-top: 10%">Sign Up</input>
+  <input type="submit" class="btn btn-outline-primary" style="margin-top: 10%" value="Sign up">
+
+
+  {% if outcome == "error 1" %}
+<p style="color:red">passwords don't match</p>
+{% endif %}
+
+{% if outcome == "error 2" %}
+<p style="color:red">Username has to be longer than 5 characters</p>
+{% endif %}
+
+{% if outcome == "error 3" %}
+<p style="color:red">Passwords has to be longer than 5 characters</p>
+{% endif %}
+
+{% if outcome == "error 4" %}
+<p style="color:red">Password has to have a number</p>
+{% endif %}
+
+{% if outcome == "error 5" %}
+<p style="color:red">Username taken</p>
+{% endif %}
+
+{% if outcome == "successful" %}
+<p style="color:red">Account created</p>
+{% endif %}
 
 
 </div>
