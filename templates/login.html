@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block page_content %}
+{%set login_status = outcome%}
 <form action="{{url_for('login_check')}}" method="POST">
 <div class="card " style="height: 25rem;width: 25rem;margin: auto;">
 

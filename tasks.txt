@@ -12,17 +12,21 @@ try remove borders and curved edges
 find way to loop through and add region --- dictionary the regions and put data in through val.pyx
 list of regions?x
 
+
+
 FINISH->
 /ranking/(area) ranking of area
 some regions dont work
 
 FINISH->
-USERNAMES AND PASSWORDS
-validate 
-add to text file
+USERNAMES AND PASSWORDSx
+validate x
+add to text filex
+login state
+top of base and nav
 
 do ranks on individual teamsx
-link to vlr lowercase - each page has an id no pattern?
+link to vlr lowercase - each page has an id no pattern? impossible
 
 stats
 player of month

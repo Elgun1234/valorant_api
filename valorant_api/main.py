@@ -79,8 +79,10 @@ async def login(request: Request):
 async def login_check(request: Request, username: str = Form(), pass1: str = Form()):
     outcome = valorant.login_checker(username,pass1)
     log.info(outcome)
+
     return templates.TemplateResponse(
-        "login.html", {"request": request,"outcome": outcome}
+        "login.html", {"request": request,"outcome": outcome,},
+        #"nav.html",{"username":username}
     )
 
 
