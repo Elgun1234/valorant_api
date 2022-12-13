@@ -105,3 +105,113 @@ INFO:valorant_api.main:100,G2,C9
 INFO:valorant_api.main:1
 INFO:valorant_api.main:
 INFO:valorant_api.main:
+2022-12-13 20:08:46 - fastapi - ERROR - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2022-12-13 20:11:35 - valorant_api.main - INFO - admin, passwords123, password123
+2022-12-13 20:11:35 - valorant_api.main - INFO - error 1
+2022-12-13 20:11:43 - valorant_api.main - INFO - admin, password123, password123
+2022-12-13 20:14:02 - valorant_api.main - INFO - admin, password123, password123
+2022-12-13 20:16:14 - valorant_api.main - INFO - admin, password123, password123
+2022-12-13 20:18:43 - valorant_api.main - INFO - admin, password123, password123
+2022-12-13 20:18:43 - valorant_api.utils - INFO - DATETIME,USERNAME,PASSWORD
+
+2022-12-13 20:18:43 - valorant_api.utils - INFO - D
+2022-12-13 20:19:02 - valorant_api.main - INFO - admin, password123, password123
+2022-12-13 20:19:02 - valorant_api.utils - INFO - DATETIME,USERNAME,PASSWORD
+
+2022-12-13 20:19:02 - valorant_api.utils - INFO - D
+2022-12-13 20:20:14 - valorant_api.main - INFO - admin, password123, password123
+2022-12-13 20:20:14 - valorant_api.utils - INFO - DATETIME,USERNAME,PASSWORD
+DATETIME,USERNAME,PASSWORD
+
+2022-12-13 20:20:14 - valorant_api.utils - INFO - D
+2022-12-13 20:21:12 - valorant_api.main - INFO - admin, password123, password123
+2022-12-13 20:21:12 - valorant_api.utils - INFO - DATETIME,USERNAME,PASSWORD
+DATETIME,USERNAME,PASSWORD
+
+2022-12-13 20:21:12 - valorant_api.utils - INFO - D
+2022-12-13 20:21:12 - valorant_api.utils - INFO - A
+2022-12-13 20:21:12 - valorant_api.utils - INFO - T
+2022-12-13 20:21:12 - valorant_api.utils - INFO - E
+2022-12-13 20:21:12 - valorant_api.utils - INFO - T
+2022-12-13 20:21:12 - valorant_api.utils - INFO - I
+2022-12-13 20:21:12 - valorant_api.utils - INFO - M
+2022-12-13 20:21:12 - valorant_api.utils - INFO - E
+2022-12-13 20:21:12 - valorant_api.utils - INFO - ,
+2022-12-13 20:21:12 - valorant_api.utils - INFO - U
+2022-12-13 20:21:12 - valorant_api.utils - INFO - S
+2022-12-13 20:21:12 - valorant_api.utils - INFO - E
+2022-12-13 20:21:12 - valorant_api.utils - INFO - R
+2022-12-13 20:21:12 - valorant_api.utils - INFO - N
+2022-12-13 20:21:12 - valorant_api.utils - INFO - A
+2022-12-13 20:21:12 - valorant_api.utils - INFO - M
+2022-12-13 20:21:12 - valorant_api.utils - INFO - E
+2022-12-13 20:21:12 - valorant_api.utils - INFO - ,
+2022-12-13 20:21:12 - valorant_api.utils - INFO - P
+2022-12-13 20:21:12 - valorant_api.utils - INFO - A
+2022-12-13 20:21:12 - valorant_api.utils - INFO - S
+2022-12-13 20:21:12 - valorant_api.utils - INFO - S
+2022-12-13 20:21:12 - valorant_api.utils - INFO - W
+2022-12-13 20:21:12 - valorant_api.utils - INFO - O
+2022-12-13 20:21:12 - valorant_api.utils - INFO - R
+2022-12-13 20:21:12 - valorant_api.utils - INFO - D
+2022-12-13 20:21:12 - valorant_api.utils - INFO - 
+
+2022-12-13 20:21:12 - valorant_api.utils - INFO - D
+2022-12-13 20:21:12 - valorant_api.utils - INFO - A
+2022-12-13 20:21:12 - valorant_api.utils - INFO - T
+2022-12-13 20:21:12 - valorant_api.utils - INFO - E
+2022-12-13 20:21:12 - valorant_api.utils - INFO - T
+2022-12-13 20:21:12 - valorant_api.utils - INFO - I
+2022-12-13 20:21:12 - valorant_api.utils - INFO - M
+2022-12-13 20:21:12 - valorant_api.utils - INFO - E
+2022-12-13 20:21:12 - valorant_api.utils - INFO - ,
+2022-12-13 20:21:12 - valorant_api.utils - INFO - U
+2022-12-13 20:21:12 - valorant_api.utils - INFO - S
+2022-12-13 20:21:12 - valorant_api.utils - INFO - E
+2022-12-13 20:21:12 - valorant_api.utils - INFO - R
+2022-12-13 20:21:12 - valorant_api.utils - INFO - N
+2022-12-13 20:21:12 - valorant_api.utils - INFO - A
+2022-12-13 20:21:12 - valorant_api.utils - INFO - M
+2022-12-13 20:21:12 - valorant_api.utils - INFO - E
+2022-12-13 20:21:12 - valorant_api.utils - INFO - ,
+2022-12-13 20:21:12 - valorant_api.utils - INFO - P
+2022-12-13 20:21:12 - valorant_api.utils - INFO - A
+2022-12-13 20:21:12 - valorant_api.utils - INFO - S
+2022-12-13 20:21:12 - valorant_api.utils - INFO - S
+2022-12-13 20:21:12 - valorant_api.utils - INFO - W
+2022-12-13 20:21:12 - valorant_api.utils - INFO - O
+2022-12-13 20:21:12 - valorant_api.utils - INFO - R
+2022-12-13 20:21:12 - valorant_api.utils - INFO - D
+2022-12-13 20:21:12 - valorant_api.utils - INFO - 
+
+2022-12-13 20:21:12 - valorant_api.main - INFO - successful
+2022-12-13 20:26:39 - valorant_api.main - INFO - admin, password123, password123
+2022-12-13 20:26:39 - valorant_api.utils - INFO - [['DATETIME', 'USERNAME', 'PASSWORD']]
+2022-12-13 20:26:39 - valorant_api.main - INFO - successful
+2022-12-13 20:31:57 - valorant_api.main - INFO - admin, password123, password123
+2022-12-13 20:31:57 - valorant_api.main - INFO - error 5
+2022-12-13 20:32:13 - valorant_api.main - INFO - admin, password123, password123
+2022-12-13 20:32:54 - valorant_api.main - INFO - admin, password123, password123
+2022-12-13 20:33:43 - valorant_api.main - INFO - admin, passwrod123, passwrod123
+2022-12-13 20:34:18 - valorant_api.main - INFO - admin, passwrod123, passwrod123
+2022-12-13 20:34:18 - valorant_api.utils - INFO - [[]]
+2022-12-13 20:34:49 - valorant_api.main - INFO - admin, passwrod123, passwrod123
+2022-12-13 20:34:49 - valorant_api.utils - INFO - [[]]
+2022-12-13 20:34:49 - valorant_api.main - INFO - successful
+2022-12-13 20:34:55 - valorant_api.main - INFO - admin, passwrod123, passwrod123
+2022-12-13 20:34:55 - valorant_api.utils - INFO - [[], ['13/12/2022 20:34:49', 'admin', 'passwrod123']]
+2022-12-13 20:35:24 - valorant_api.main - INFO - admin, passwrod123, passwrod123
+2022-12-13 20:35:24 - valorant_api.utils - INFO - [['13/12/2022 20:34:49', 'admin', 'passwrod123']]
+2022-12-13 20:35:24 - valorant_api.main - INFO - error 5
+2022-12-13 20:55:30 - valorant_api.Val - INFO - good
+2022-12-13 20:56:46 - valorant_api.Val - INFO - good
+2022-12-13 20:57:53 - valorant_api.Val - INFO - good
+2022-12-13 20:57:53 - valorant_api.main - INFO - True
+2022-12-13 20:58:35 - valorant_api.Val - INFO - good
+2022-12-13 20:58:35 - valorant_api.main - INFO - True
+2022-12-13 20:59:13 - valorant_api.Val - INFO - bad
+2022-12-13 20:59:13 - valorant_api.main - INFO - False

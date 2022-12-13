@@ -1,6 +1,10 @@
 from urllib.request import urlopen
 from datetime import datetime
 import json
+import logging
+import csv
+
+log = logging.getLogger(__name__)
 
 
 
@@ -12,20 +16,33 @@ def scrape(url: str):
     fp.close()
     return json.loads(mystr)
 
+def read_csv(csv_file):
+    csv_contents = []
+    with open(csv_file) as csvfile:
+        reader = csv.reader(csvfile, delimiter=",")
+        next(reader)
+        for row in reader:
+            csv_contents.append(row)
+    return csv_contents
 def username_check(username):
-    f = open("accounts.txt", "r")
-    data = f.read()
-    print(data)
-    if username in data:
-        return False
-    else:
+    data = read_csv("accounts.csv")
+    log.info(data)
+    if data == [[]]:
         return True
+    for i in data:
+        if i[1] == username:
+            return False
+        else:
+            return True
+
+
+
 
 
 def add_account(username,pass1):
     now = datetime.now()
-    f = open("accounts.txt","a")
-    f.write(f"\n\n{now.strftime('%d/%m/%Y %H:%M:%S')}  {username}  {pass1} ")
+    f = open("accounts.csv","a")
+    f.write(f"{now.strftime('%d/%m/%Y %H:%M:%S')},{username},{pass1}\n")
 
 def number_check(pass1):
     k=0

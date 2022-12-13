@@ -1,5 +1,5 @@
 from urllib.parse import quote, urlencode
-from valorant_api.utils import scrape,username_check,add_account,number_check
+from valorant_api.utils import scrape,username_check,add_account,number_check,read_csv
 import logging
 
 log = logging.getLogger(__name__)
@@ -69,12 +69,20 @@ class valorant:
         dictionary = {}
         r = region.lower()
         url = self.base + "rankings/" + r
-        print(region.lower())
-        print(url)
+
         data = scrape(url)
         dictionary[r.upper()]=data
         return dictionary
 
+    def login_checker(self,username,pass1):
+        accounts = read_csv("accounts.csv")
+        for i in accounts:
+            if username == i[1] and pass1 == i[2]:
+                log.info("good")
+                return True
+        else:
+            log.info("bad")
+            return False
     def create_account(self,username,pass1,pass2):
 
 

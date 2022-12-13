@@ -1,4 +1,4 @@
-uvicorn valorant_api.main:app
+uvicorn valorant_api.main:app --reload
 pipenv install -r requirements.txt
 https://vlrggapi.vercel.app/
 

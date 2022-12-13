@@ -77,9 +77,10 @@ async def login(request: Request):
 
 @app.post("/login_check", response_class=HTMLResponse)
 async def login_check(request: Request, username: str = Form(), pass1: str = Form()):
-    log.info(f"{username}, {pass1}")
+    outcome = valorant.login_checker(username,pass1)
+    log.info(outcome)
     return templates.TemplateResponse(
-        "login.html", {"request": request, }
+        "login.html", {"request": request,"outcome": outcome}
     )
 
 
