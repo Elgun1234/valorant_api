@@ -1,4 +1,5 @@
 from urllib.request import urlopen
+from datetime import datetime
 import json
 
 
@@ -14,6 +15,7 @@ def scrape(url: str):
 def username_check(username):
     f = open("accounts.txt", "r")
     data = f.read()
+    print(data)
     if username in data:
         return False
     else:
@@ -21,8 +23,9 @@ def username_check(username):
 
 
 def add_account(username,pass1):
-    f = open("accounts.txt", "+")
-    f.write(f"{username}  {pass1} \n \n")
+    now = datetime.now()
+    f = open("accounts.txt","a")
+    f.write(f"\n\n{now.strftime('%d/%m/%Y %H:%M:%S')}  {username}  {pass1} ")
 
 def number_check(pass1):
     k=0
@@ -34,6 +37,7 @@ def number_check(pass1):
         return True
     else:
         return False
+
 
 
 
