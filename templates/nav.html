@@ -16,7 +16,21 @@
 {% endif%}
 
  {% if login_status == True%}
-        {{username}}
+          <div class="dropdown" style="margin-left: 750px">
+  <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <strong style=""><p style="color:blue;">{{username}}</p></strong>
+  </button>
+  <ul class="dropdown-menu">
+    <li><button type="button" class="btn btn-danger " >Log out</button></li>
+
+  </ul>
+</div>
+
+
+
+
+
+
 {% endif %}
       </div>
     </div>
