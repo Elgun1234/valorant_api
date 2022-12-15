@@ -42,7 +42,7 @@ def username_check(username):
 def add_account(username,pass1):
     now = datetime.now()
     f = open("accounts.csv","a")
-    f.write(f"{now.strftime('%d/%m/%Y %H:%M:%S')},{username},{pass1}\n")
+    f.write(f"\n{now.strftime('%d/%m/%Y %H:%M:%S')},{username},{pass1}")
 
 def number_check(pass1):
     k=0
@@ -50,7 +50,7 @@ def number_check(pass1):
     for i in numbers:
         if i in pass1:
             k+=1
-    if k>=3:
+    if k>=1:
         return True
     else:
         return False
