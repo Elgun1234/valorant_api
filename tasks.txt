@@ -76,3 +76,29 @@ results of matches of team?
 
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <strong style=""><p style="color:blue;">{{username}}</p></strong>
+  </button>
+  <ul class="dropdown-menu">
+    <li><input type="submit" class="btn btn-primary" style="" value="logout"></li>
+
+  </ul>
+</div>
